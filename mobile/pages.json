@@ -1,0 +1,142 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/video-data/video-data",
+      "style": {
+        "navigationBarTitleText": "视频数据",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/ranking/ranking",
+      "style": {
+        "navigationBarTitleText": "排行"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/withdraw/withdraw",
+      "style": {
+        "navigationBarTitleText": "提现流程"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/forgot-password/forgot-password",
+      "style": {
+        "navigationBarTitleText": "忘记密码"
+      }
+    },
+    {
+      "path": "pages/video-player/video-player",
+      "style": {
+        "navigationBarTitleText": "视频播放",
+        "navigationBarBackgroundColor": "#000000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/platform-auth/platform-auth",
+      "style": {
+        "navigationBarTitleText": "平台授权",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "编辑资料",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/finance-flow/finance-flow",
+      "style": {
+        "navigationBarTitleText": "财务流水",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/wechat-login/wechat-login",
+      "style": {
+        "navigationBarTitleText": "微信登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/wechat-auth/wechat-auth",
+      "style": {
+        "navigationBarTitleText": "微信授权",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "视频任务",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "titleNView": {
+        "titleText": "视频任务管理系统"
+      }
+    }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+		"iconPath": "/static/images/index.png",
+		"selectedIconPath": "/static/images/selectIndex.png"
+      },
+      {
+        "pagePath": "pages/video-data/video-data",
+        "text": "视频数据",
+		"iconPath": "/static/images/video.png",
+		"selectedIconPath": "/static/images/selectVideo.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排行",
+        "iconPath": "/static/images/ranking.png",
+        "selectedIconPath": "/static/images/selectRanking.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+		"iconPath": "/static/images/person.png",
+		"selectedIconPath": "/static/images/selectPerson.png"
+      }
+    ]
+  }
+}
+ 

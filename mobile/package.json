@@ -1,0 +1,31 @@
+{
+  "name": "video-task-mobile",
+  "version": "1.0.0",
+  "description": "视频任务管理系统 - 移动端",
+  "main": "main.js",
+  "scripts": {
+    "dev:h5": "uni build --platform h5",
+    "dev:mp-weixin": "uni build --platform mp-weixin",
+    "dev:app-plus": "uni build --platform app-plus",
+    "build:h5": "uni build --platform h5 --mode production",
+    "build:mp-weixin": "uni build --platform mp-weixin --mode production",
+    "build:app-plus": "uni build --platform app-plus --mode production"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^2.0.2",
+    "@dcloudio/uni-h5": "^2.0.2",
+    "@dcloudio/uni-mp-weixin": "^2.0.2",
+    "@dcloudio/uni-app-plus": "^2.0.2"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "^2.0.0",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0"
+  },
+  "browserslist": [
+    "Android >= 4.4",
+    "ios >= 9"
+  ],
+  "uni-app": {
+    "scripts": {}
+  }
+}

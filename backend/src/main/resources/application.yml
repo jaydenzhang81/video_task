@@ -1,0 +1,86 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: video-task-backend
+  
+  datasource:
+    url: jdbc:mysql://192.168.66.2:3306/video_task?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: jiejie123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+  
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 5
+    # Redis服务器地址
+    host: 192.168.66.2
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password: jiejie123
+    # 连接超时时间
+    timeout: 20s
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
+
+# 日志配置
+logging:
+  level:
+    com.videotask: DEBUG
+    org.springframework.web: DEBUG
+
+sa-token:
+  # token名称 (同时也是cookie名称)
+  token-name: swuser
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 2592000
+  # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  activity-timeout: -1
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录)
+  is-concurrent: true
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token)
+  is-share: false
+  # token风格
+  token-style: uuid
+  # 是否输出操作日志
+  is-log: true
+  jwt-secret-key: JcsN5dcq3RfsPao0Y8R5Rt64j94mbpLCjGMK
+
+# 快手开放平台配置
+kuaishou:
+  app-id: ks711568745006848542
+  app-secret: _O_04klamILrBMYlUD0QqA
+
+# 抖音开放平台配置
+douyin:
+  client-key: awyxi4pn8889rtnw    # 替换为你的抖音应用client_key
+  client-secret: 4d57f8012849823482ae3e2dedd7bedc  # 替换为你的抖音应用client_secret
+
+# 微信开放平台配置
+wechat:
+  app-id: your_wechat_app_id    # 替换为你的微信应用AppID
+  app-secret: your_wechat_app_secret  # 替换为你的微信应用AppSecret
+
