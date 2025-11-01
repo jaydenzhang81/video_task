@@ -177,6 +177,4 @@ npm run build:app-plus
 - 管理后台说明：`admin/README.md`
 - 移动端说明：`mobile/README.md`
 
-> 注：本项目不提供数据库建表 SQL，亦不编写测试页面/测试方法，后端不造模拟数据。
-
 
